@@ -13,5 +13,5 @@ def reduce(arr, start = 0)
     start = yield(arr[i], start)
   end
   
-  start
+  start ? start : false
 end
