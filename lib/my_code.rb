@@ -9,5 +9,9 @@ def map(arr)
 end
 
 def reduce(arr, start = 0)
+  arr.length.times do |i|
+    start = yield(arr, start)
+  end
   
+  start
 end
