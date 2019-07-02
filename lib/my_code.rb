@@ -2,7 +2,8 @@
 def map(arr)
   result = []
   arr.length.times do |i|
-    yield(arr[i])
+    result[i] = yield(arr[i])
   end
 
+  result
 end
